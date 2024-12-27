@@ -22,6 +22,7 @@
             <TextBlock HorizontalAlignment="Right" FontSize = "30" Text="МАТЧИ"></TextBlock>
             <TextBlock HorizontalAlignment="Right" FontSize = "30" Text="ПОБЕД"></TextBlock>
             <TextBlock HorizontalAlignment="Right" FontSize = "30" Text="ПОРАЖЕНИЙ"></TextBlock>
+            <Button Width="200" Height="30" x:Name="achiveBtn" Margin="0,0,0,0" Content="ЛИЧНЫЕ ДОСТИЖЕНИЯ" Grid.ColumnSpan="2" Click="achiveBtn_Click"></Button>
         </StackPanel>
         <StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,100,0,0">
             <TextBlock x:Name="Id" FontSize="30" Height="40" Width="300" Margin="10"></TextBlock>
@@ -31,6 +32,7 @@
             <TextBlock x:Name="Matches" FontSize="30" Height="40" Width="300"></TextBlock>
             <TextBlock x:Name="Wins" FontSize="30" Height="40" Width="300"></TextBlock>
             <TextBlock x:Name="Falls" FontSize="30" Height="40" Width="300"></TextBlock>
+            <Button Width="200" Height="30" x:Name="titulBtn" Content="МЕСТА В ТУРНИРАХ" Grid.ColumnSpan="2" Click="titulBtn_Click"></Button>
         </StackPanel>
     </Grid>
 </Page>

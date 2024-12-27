@@ -34,5 +34,15 @@ namespace Tournament_421_HabibullinDmitry.Pages
             Falls.Text = App.ggDb.Tournament.Where(x => x.Winner != matchPlayer.Id_Player).Count().ToString();
             
         }
+
+        private void achiveBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void titulBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
