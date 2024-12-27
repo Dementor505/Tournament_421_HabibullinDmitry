@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tournament_421_HabibullinDmitry"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1400">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1200"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Frame x:Name="mainFrame"></Frame>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Background="SkyBlue">
+            <TextBlock Text="МЕНЮ" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+        </StackPanel>
     </Grid>
 </Window>
