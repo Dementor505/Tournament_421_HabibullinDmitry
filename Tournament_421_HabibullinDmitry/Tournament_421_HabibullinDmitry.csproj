@@ -80,6 +80,9 @@
     <Compile Include="ControlsWrap\TournamentControl.xaml.cs">
       <DependentUpon>TournamentControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddEditTournament.xaml.cs">
+      <DependentUpon>AddEditTournament.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MatchesList.xaml.cs">
       <DependentUpon>MatchesList.xaml</DependentUpon>
     </Compile>
@@ -207,6 +210,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddEditTournament.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AuthorizationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -37,5 +37,10 @@ namespace Tournament_421_HabibullinDmitry
         {
             App.mainFrame.Navigate(new TournamentsList());
         }
+
+        private void AddTournamentsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            App.mainFrame.Navigate(new AddEditTournament());
+        }
     }
 }

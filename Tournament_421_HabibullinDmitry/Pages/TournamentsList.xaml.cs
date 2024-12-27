@@ -27,14 +27,26 @@ namespace Tournament_421_HabibullinDmitry.Pages
             InitializeComponent();
 
 
-            foreach (Tournament tournament in App.ggDb.Tournament)
+            Refresh();
+            filtrCb.SelectedIndex = 2;
+        }
+        public void Refresh()
+        {
+            TControls.Children.Clear();
+            List<Tournament> tournaments = App.ggDb.Tournament.ToList();
+
+            if (filtrCb.SelectedIndex == 1) tournaments = tournaments.Where(x => x.StartTournament > DateTime.Now).ToList();
+            if (filtrCb.SelectedIndex == 0) tournaments = tournaments.Where(x => x.StartTournament < DateTime.Now).ToList();
+            if (filtrCb.SelectedIndex == 2) tournaments = tournaments;
+            foreach (Tournament tournament in tournaments)
             {
                 TControls.Children.Add(new TournamentControl(tournament));
             }
         }
-        public void Refresh()
-        {
 
+        private void filtrCb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Refresh();
         }
     }
 }

@@ -18,6 +18,9 @@
             <TextBlock Text="МЕНЮ" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontWeight="Bold" TextAlignment="Center"></TextBlock>
             <Button x:Name="ReportBtn" Width="100" Height="100" Content="ОТЧЁТЫ" FontSize="20" Click="ReportBtn_Click"></Button>
             <Button x:Name="TournamentsBtn" Width="100" Height="100" Content="Турниры" FontSize="20" Click="TournamentsBtn_Click"></Button>
+            <Button x:Name="AddTournamentsBtn" Width="100" Height="100" FontSize="20" Click="AddTournamentsBtn_Click">
+                <TextBlock Text="Добавить турниры" TextWrapping="Wrap"></TextBlock>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

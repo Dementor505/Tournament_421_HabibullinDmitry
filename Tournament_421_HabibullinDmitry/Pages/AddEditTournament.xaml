@@ -1,0 +1,38 @@
+﻿<Page x:Class="Tournament_421_HabibullinDmitry.Pages.AddEditTournament"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tournament_421_HabibullinDmitry.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1400"
+      Title="AddEditTournament">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <TextBlock FontSize = "30" Text="НАЗВАНИЕ" Margin="10"></TextBlock>
+            <TextBlock FontSize = "30" Text="ТИП" Margin="10"></TextBlock>
+            <TextBlock FontSize = "30" Text="СТАРТ" Margin="10"></TextBlock>
+            <TextBlock FontSize = "30" Text="КОНЕЦ" Margin="10"></TextBlock>
+            <TextBlock FontSize = "30" Text="ПРИЗ" Margin="10"></TextBlock>
+            <TextBlock FontSize = "30" Text="ИГРОКОВ" Margin="10"></TextBlock>
+            <TextBlock FontSize = "30" Text="ИГРА" Margin="10"></TextBlock>
+            <TextBlock FontSize = "30" Text="СТАТУС" Margin="10"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBox x:Name="NameTb" FontSize="30" Height="40" Width="300" Margin="10"></TextBox>
+            <ComboBox x:Name="TypeTb" FontSize="30" Height="40" Width="300"></ComboBox>
+            <TextBox x:Name="StartTb" FontSize="30" Height="40" Width="300" Margin="10"></TextBox>
+            <TextBox x:Name="EndTb" FontSize="30" Height="40" Width="300" Margin="10"></TextBox>
+            <TextBox x:Name="MoneyTb" FontSize="30" Height="40" Width="300" Margin="10"></TextBox>
+            <TextBox x:Name="PlayersTb" FontSize="30" Height="40" Width="300" Margin="10"></TextBox>
+            <ComboBox x:Name="GameTb" FontSize="30" Height="40" Width="300" Margin="10"></ComboBox>
+            <ComboBox x:Name="StatusTb" FontSize="30" Height="40" Width="300" Margin="10"></ComboBox>
+        </StackPanel>
+            <Button Height="50" Width="200" Content="ДОБАВИТЬ" FontSize="20" x:Name="AddBtn" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.ColumnSpan="2" Click="AddBtn_Click"></Button>
+    </Grid>
+</Page>
