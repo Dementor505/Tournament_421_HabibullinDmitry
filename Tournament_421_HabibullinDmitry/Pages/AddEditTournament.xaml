@@ -33,6 +33,6 @@
             <ComboBox x:Name="GameTb" FontSize="30" Height="40" Width="300" Margin="10"></ComboBox>
             <ComboBox x:Name="StatusTb" FontSize="30" Height="40" Width="300" Margin="10"></ComboBox>
         </StackPanel>
-            <Button Height="50" Width="200" Content="ДОБАВИТЬ" FontSize="20" x:Name="AddBtn" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.ColumnSpan="2" Click="AddBtn_Click"></Button>
+            <Button Height="50" Width="200" Content="ДОБАВИТЬ" Margin="0,0,0,-200" FontSize="20" x:Name="AddBtn" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.ColumnSpan="2" Click="AddBtn_Click"></Button>
     </Grid>
 </Page>
