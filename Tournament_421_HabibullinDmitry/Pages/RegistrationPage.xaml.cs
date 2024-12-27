@@ -12,20 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Tournament_421_HabibullinDmitry.Pages;
 
-namespace Tournament_421_HabibullinDmitry
+namespace Tournament_421_HabibullinDmitry.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для RegistrationPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegistrationPage : Page
     {
-        public MainWindow()
+        public RegistrationPage()
         {
             InitializeComponent();
-            App.mainFrame = mainFrame;
-            mainFrame.Navigate(new StartPage());
         }
     }
 }

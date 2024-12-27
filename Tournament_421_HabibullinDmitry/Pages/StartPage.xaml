@@ -1,0 +1,18 @@
+﻿<Page x:Class="Tournament_421_HabibullinDmitry.Pages.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tournament_421_HabibullinDmitry.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="StartPage">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Width="200" Height="50" x:Name="AuthBtn" Content="АВТОРИЗАЦИЯ" Margin="0,0,30,0" Click="AuthBtn_Click"></Button>
+            <Button Width="200" Height="50" x:Name="RegBtn" Content="РЕГИСТРАЦИЯ" Click="RegBtn_Click"></Button>
+        </StackPanel>
+        <Button Width="200" Height="50" x:Name="VisitorBtn" Content="Я ГОСТЬ" Margin="0,150,0,0"></Button>
+    </Grid>
+</Page>

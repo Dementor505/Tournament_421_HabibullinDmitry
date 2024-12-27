@@ -35,8 +35,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EasyMCK">
+      <HintPath>..\..\EasyMCK\EasyMCK\bin\Debug\EasyMCK.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +67,102 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StatsPlayer.xaml.cs">
+      <DependentUpon>StatsPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Achivements.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\GameItems.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\GamingBase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GamingBase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\GamingBase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\GamingBase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GamingBase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\GamingClass.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\GClassPreference.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\GItemsLimits.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Match.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\MatchPlayer.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Moderator.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Player.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\PlayerStats.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\RegionLimits.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Regions.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Status.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\sysdiagrams.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Team.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TeamPlayer.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\Tournament.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TournamentGame.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TournamentLimits.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TournamentPlace.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TournamentReport.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TournamentReward.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TournamentStatys.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\TournamentType.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentBase\User.cs">
+      <DependentUpon>GamingBase.tt</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,10 +179,32 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StatsPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -93,9 +223,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="TournamentBase\GamingBase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GamingBase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TournamentBase\GamingBase.edmx.diagram">
+      <DependentUpon>GamingBase.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -103,7 +241,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="TournamentBase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TournamentBase\GamingBase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GamingBase.Context.cs</LastGenOutput>
+      <DependentUpon>GamingBase.edmx</DependentUpon>
+    </Content>
+    <Content Include="TournamentBase\GamingBase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GamingBase.edmx</DependentUpon>
+      <LastGenOutput>GamingBase.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

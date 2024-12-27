@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a773fd36d6743dda9b2a488c565e18a" Name="Diagram1">
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Achivements" Width="1.5" PointX="10.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.GameItems" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.GamingClass" Width="1.5" PointX="3.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.GClassPreference" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.GItemsLimits" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Match" Width="1.5" PointX="8.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.MatchPlayer" Width="1.5" PointX="13.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Moderator" Width="1.5" PointX="6" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Player" Width="1.5" PointX="6" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.PlayerStats" Width="1.5" PointX="8.25" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.RegionLimits" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Regions" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Status" Width="1.5" PointX="6" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Team" Width="1.5" PointX="6" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TeamPlayer" Width="1.5" PointX="15.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.Tournament" Width="1.5" PointX="6" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TournamentGame" Width="1.5" PointX="1.5" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TournamentLimits" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TournamentPlace" Width="1.5" PointX="8.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TournamentReport" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TournamentReward" Width="1.5" PointX="8.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TournamentStatys" Width="1.5" PointX="3.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.TournamentType" Width="1.5" PointX="3.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_421_HabibuLLinModel.User" Width="1.5" PointX="3.75" PointY="17.625" IsExpanded="true" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Achivements_Match" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Achivements_PlayerStats" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_GameItems_TournamentGame" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_GItemsLimits_GameItems" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_GClassPreference_GamingClass" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_MatchPlayer_GamingClass" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TournamentPlace_GClassPreference" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_GItemsLimits_TournamentLimits" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Match_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_MatchPlayer_Match" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_MatchPlayer_Player" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TeamPlayer_MatchPlayer" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Moderator_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Player_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_PlayerStats_Player" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TournamentReward_PlayerStats" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_RegionLimits_Regions" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_RegionLimits_TournamentLimits" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TournamentPlace_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TeamPlayer_Team" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TournamentPlace_Team" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Tournament_TournamentGame" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Tournament_TournamentLimits" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Tournament_TournamentStatys" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_Tournament_TournamentType" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TournamentPlace_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_421_HabibuLLinModel.FK_TournamentReward_Tournament" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
