@@ -12,10 +12,12 @@
             <ColumnDefinition Width="200"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <Frame x:Name="mainFrame"></Frame>
+            <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden"></Frame>
         </StackPanel>
         <StackPanel Grid.Column="1" Background="SkyBlue">
             <TextBlock Text="МЕНЮ" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+            <Button x:Name="ReportBtn" Width="100" Height="100" Content="ОТЧЁТЫ" FontSize="20" Click="ReportBtn_Click"></Button>
+            <Button x:Name="TournamentsBtn" Width="100" Height="100" Content="Турниры" FontSize="20" Click="TournamentsBtn_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>

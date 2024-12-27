@@ -77,6 +77,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ControlsWrap\TournamentControl.xaml.cs">
+      <DependentUpon>TournamentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MatchesList.xaml.cs">
+      <DependentUpon>MatchesList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PlayerAchivePage.xaml.cs">
       <DependentUpon>PlayerAchivePage.xaml</DependentUpon>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <Compile Include="Pages\StatsPlayer.xaml.cs">
       <DependentUpon>StatsPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TournamentsList.xaml.cs">
+      <DependentUpon>TournamentsList.xaml</DependentUpon>
     </Compile>
     <Compile Include="TournamentBase\Achivements.cs">
       <DependentUpon>GamingBase.tt</DependentUpon>
@@ -182,6 +191,10 @@
     <Compile Include="TournamentBase\User.cs">
       <DependentUpon>GamingBase.tt</DependentUpon>
     </Compile>
+    <Page Include="ControlsWrap\TournamentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -195,6 +208,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MatchesList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -223,6 +240,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\StatsPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TournamentsList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

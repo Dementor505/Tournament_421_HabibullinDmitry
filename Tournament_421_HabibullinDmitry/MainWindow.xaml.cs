@@ -27,5 +27,15 @@ namespace Tournament_421_HabibullinDmitry
             App.mainFrame = mainFrame;
             mainFrame.Navigate(new StartPage());
         }
+
+        private void ReportBtn_Click(object sender, RoutedEventArgs e)
+        {
+            App.mainFrame.Navigate(new ReportPage());
+        }
+
+        private void TournamentsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            App.mainFrame.Navigate(new TournamentsList());
+        }
     }
 }
